@@ -8,7 +8,8 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "productos")
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 public class Producto {
 
@@ -32,4 +33,3 @@ public class Producto {
     @Column(name = "categoria_id", nullable = false)
     private Long categoriaId;
 }
-``
