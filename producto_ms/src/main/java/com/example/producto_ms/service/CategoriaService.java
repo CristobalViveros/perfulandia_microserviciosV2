@@ -1,5 +1,13 @@
 package com.example.producto_ms.service;
 
-public class CategoriaService {
+import com.example.producto_ms.dto.CategoriaDTO;
 
+import java.util.List;
+
+public interface CategoriaService {
+    CategoriaDTO crear(CategoriaDTO dto);
+    List<CategoriaDTO> listar();
+    CategoriaDTO obtenerPorId(Long id);
+    CategoriaDTO actualizar(Long id, CategoriaDTO dto);
+    void eliminar(Long id);
 }
